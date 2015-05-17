@@ -1,13 +1,16 @@
 {
-Children={
-{
-X=1,
-Y=1,
-Width="100%",
-Height="100%",
-Name="ContentScrollView",
-Type="ScrollView",
-},
-},
-BackgroundColour="white",
+    Children={
+        {
+            X=1,
+            Y=1,
+            Width="100%",
+            Height="100%",
+            Name="ContentScrollView",
+            Type="ScrollView",
+            Children={
+
+            }
+        },
+    },
+    BackgroundColour="white",
 }

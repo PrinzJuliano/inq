@@ -1,6 +1,9 @@
 # Lua source files
 *.lua
 
+#Bedrock Views
+*.view
+
 # Compiled Lua sources
 luac.out
 

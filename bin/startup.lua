@@ -13,6 +13,11 @@ local OnCTRLDownMask = function()
 	program:StartTimer(OnResetCTRLMask, 0.9)
 end
 
+local OnExit = function()
+	program:LoadView("exit")
+	--TODO save
+	errror()
+end
 
 --event registers
 program:RegisterEvent("key", function(self, event, key)
@@ -20,10 +25,7 @@ program:RegisterEvent("key", function(self, event, key)
 		OnCTRLDownMask()
 	end
 	if ctrlMask and key == "q" then
-		program.LoadView("exit")
-		--TODO check for save
-		error() -- this exits the program after the exit view was loaded (Forced way)
-		--HINT: error with zero parameters will not raise an error. It just exits out the execution loop
+		OnExit()
 	end
 end)
 

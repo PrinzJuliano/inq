@@ -1,1 +1,15 @@
 
+{
+	Children={
+		{
+			X=1,
+			Y=1,
+			Width="100%",
+			Align="left",
+			Type="Label",
+			Name="GoodbyeLabel",
+			Text="Thanks for using a PJOG solution!",
+		}
+	},
+	BackgrounColour="black"
+}

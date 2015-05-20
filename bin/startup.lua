@@ -16,7 +16,7 @@ end
 local OnExit = function()
 	program:LoadView("exit")
 	--TODO save
-	errror()
+	program:Quit()
 end
 
 --event registers
